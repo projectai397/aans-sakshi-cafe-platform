@@ -16,19 +16,19 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       {/* Navigation - Ghibli styled */}
       <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-ghibli">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container mx-auto px-4 flex h-16 items-center justify-between max-w-7xl">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-full bg-primary/10">
               <Brain className="h-5 w-5 text-primary" />
             </div>
             <span className="font-display font-bold text-xl text-primary">AANS</span>
           </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#overview" onClick={(e) => { e.preventDefault(); document.getElementById('overview')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">Overview</a>
-            <a href="#divisions" onClick={(e) => { e.preventDefault(); document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">Divisions</a>
-            <a href="#financials" onClick={(e) => { e.preventDefault(); document.getElementById('financials')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">Financials</a>
-            <a href="#advantages" onClick={(e) => { e.preventDefault(); document.getElementById('advantages')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">Advantages</a>
-            <a href="#technical" onClick={(e) => { e.preventDefault(); document.getElementById('technical')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">Technical</a>
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+            <a href="#overview" onClick={(e) => { e.preventDefault(); document.getElementById('overview')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap">Overview</a>
+            <a href="#divisions" onClick={(e) => { e.preventDefault(); document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap">Divisions</a>
+            <a href="#financials" onClick={(e) => { e.preventDefault(); document.getElementById('financials')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap">Financials</a>
+            <a href="#advantages" onClick={(e) => { e.preventDefault(); document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap">Advantages</a>
+            <a href="#technical" onClick={(e) => { e.preventDefault(); document.getElementById('technical')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap">Technical</a>
           </div>
         </div>
       </nav>
