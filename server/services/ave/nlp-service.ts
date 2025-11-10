@@ -158,7 +158,7 @@ export class NLPService {
     let detectedIntent = Intent.UNKNOWN;
     let maxConfidence = 0;
 
-    for (const [intent, patterns] of this.intentPatterns.entries()) {
+    for (const [intent, patterns] of Array.from(this.intentPatterns.entries())) {
       for (const pattern of patterns) {
         if (pattern.test(normalizedText)) {
           detectedIntent = intent;
