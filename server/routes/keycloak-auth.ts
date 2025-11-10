@@ -3,7 +3,7 @@
  * Handles user authentication, registration, and token management
  */
 
-import { router, publicProcedure, protectedProcedure } from '@/server/trpc'
+import { router, publicProcedure, protectedProcedure } from '@/server/_core/trpc'
 import { z } from 'zod'
 import {
   verifyToken,

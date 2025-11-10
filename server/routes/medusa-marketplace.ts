@@ -3,7 +3,7 @@
  * Handles seller and product management for SubCircle marketplace
  */
 
-import { router, publicProcedure, protectedProcedure } from '@/server/trpc'
+import { router, publicProcedure, protectedProcedure } from '@/server/_core/trpc'
 import { z } from 'zod'
 import { sellerService } from '@/server/services/seller-service'
 

@@ -1,40 +1,44 @@
 /**
- * Main API Routes
- * Aggregates all service routes
+ * Main API Routes (LEGACY - NOT USED)
+ * This file is not used in the current tRPC-based architecture.
+ * Kept for reference only.
+ * 
+ * The project uses tRPC for all API routes, not Express routes.
+ * See server/routes/*.ts files for actual tRPC route definitions.
  */
 
 import { Router } from 'express';
 
-// Import route handlers
-import authRoutes from './auth.routes';
+// Import route handlers (COMMENTED OUT - Files don't exist)
+// import authRoutes from './auth.routes';
 import orderRoutes from './orders.routes';
-import deliveryRoutes from './delivery.routes';
-import customerRoutes from './customers.routes';
-import staffRoutes from './staff.routes';
-import analyticsRoutes from './analytics.routes';
-import inventoryRoutes from './inventory.routes';
-import menuRoutes from './menu.routes';
-import loyaltyRoutes from './loyalty.routes';
-import adminRoutes from './admin.routes';
-import supportRoutes from './support.routes';
+// import deliveryRoutes from './delivery.routes';
+// import customerRoutes from './customers.routes';
+// import staffRoutes from './staff.routes';
+// import analyticsRoutes from './analytics.routes';
+// import inventoryRoutes from './inventory.routes';
+// import menuRoutes from './menu.routes';
+// import loyaltyRoutes from './loyalty.routes';
+// import adminRoutes from './admin.routes';
+// import supportRoutes from './support.routes';
 
 const router = Router();
 
 // API version
 const API_VERSION = '/api/v1';
 
-// Mount all routes
-router.use(`${API_VERSION}/auth`, authRoutes);
+// Mount all routes (COMMENTED OUT - Not used)
+// router.use(`${API_VERSION}/auth`, authRoutes);
 router.use(`${API_VERSION}/orders`, orderRoutes);
-router.use(`${API_VERSION}/delivery`, deliveryRoutes);
-router.use(`${API_VERSION}/customers`, customerRoutes);
-router.use(`${API_VERSION}/staff`, staffRoutes);
-router.use(`${API_VERSION}/analytics`, analyticsRoutes);
-router.use(`${API_VERSION}/inventory`, inventoryRoutes);
-router.use(`${API_VERSION}/menu`, menuRoutes);
-router.use(`${API_VERSION}/loyalty`, loyaltyRoutes);
-router.use(`${API_VERSION}/admin`, adminRoutes);
-router.use(`${API_VERSION}/support`, supportRoutes);
+// router.use(`${API_VERSION}/delivery`, deliveryRoutes);
+// router.use(`${API_VERSION}/customers`, customerRoutes);
+// router.use(`${API_VERSION}/staff`, staffRoutes);
+// router.use(`${API_VERSION}/analytics`, analyticsRoutes);
+// router.use(`${API_VERSION}/inventory`, inventoryRoutes);
+// router.use(`${API_VERSION}/menu`, menuRoutes);
+// router.use(`${API_VERSION}/loyalty`, loyaltyRoutes);
+// router.use(`${API_VERSION}/admin`, adminRoutes);
+// router.use(`${API_VERSION}/support`, supportRoutes);
 
 // Health check
 router.get('/health', (req, res) => {

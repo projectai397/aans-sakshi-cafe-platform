@@ -3,7 +3,7 @@
  * Handles file uploads, downloads, and management
  */
 
-import { router, publicProcedure, protectedProcedure } from '@/server/trpc'
+import { router, publicProcedure, protectedProcedure } from '@/server/_core/trpc'
 import { z } from 'zod'
 import { minioService } from '@/server/services/minio-service'
 

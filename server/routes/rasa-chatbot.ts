@@ -3,7 +3,7 @@
  * Handles chat messages and conversation management
  */
 
-import { router, publicProcedure, protectedProcedure } from '@/server/trpc'
+import { router, publicProcedure, protectedProcedure } from '@/server/_core/trpc'
 import { z } from 'zod'
 
 const RASA_URL = process.env.RASA_URL || 'http://localhost:5005'
