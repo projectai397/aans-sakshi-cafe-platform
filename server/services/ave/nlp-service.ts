@@ -356,7 +356,7 @@ export class NLPService {
         break;
 
       case Intent.COMPLAINT:
-        response = 'I'm sorry to hear you're having an issue. Let me transfer you to our manager who can help you better.';
+        response = 'I\'m sorry to hear you\'re having an issue. Let me transfer you to our manager who can help you better.';
         break;
 
       case Intent.GOODBYE:
@@ -364,7 +364,7 @@ export class NLPService {
         break;
 
       default:
-        response = 'I'm sorry, I didn't quite understand that. Could you please rephrase?';
+        response = 'I\'m sorry, I didn\'t quite understand that. Could you please rephrase?';
     }
 
     // Add response to conversation history

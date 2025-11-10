@@ -235,7 +235,7 @@ export class VoiceReservationService {
     if (available.length === 0) {
       return {
         success: false,
-        response: 'I'm sorry, that time slot is no longer available. Would you like to try a different time?',
+        response: 'I\'m sorry, that time slot is no longer available. Would you like to try a different time?',
       };
     }
 
@@ -244,7 +244,7 @@ export class VoiceReservationService {
     if (!table) {
       return {
         success: false,
-        response: 'I'm sorry, we couldn't assign a table. Please try again.',
+        response: 'I\'m sorry, we couldn\'t assign a table. Please try again.',
       };
     }
 
