@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1762693890691,
+      "tag": "0000_fair_sheva_callister",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1762693971890,
+      "tag": "0001_yielding_whiplash",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1762697727318,
+      "tag": "0002_woozy_blockbuster",
+      "breakpoints": true
+    }
+  ]
+}

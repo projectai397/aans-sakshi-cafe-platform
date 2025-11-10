@@ -1,0 +1,163 @@
+version: "3.0"
+
+intents:
+  - greet
+  - reservation
+  - menu_inquiry
+  - order
+  - feedback
+  - cancel
+  - track_order
+  - payment
+  - contact
+  - dietary_preference
+  - affirm
+  - deny
+  - inform
+
+entities:
+  - party_size
+  - date
+  - time
+  - name
+  - phone
+  - item_name
+  - quantity
+  - cuisine_type
+  - dietary_preference
+  - order_id
+
+slots:
+  party_size:
+    type: text
+  date:
+    type: text
+  time:
+    type: text
+  name:
+    type: text
+  phone:
+    type: text
+  item_name:
+    type: text
+  quantity:
+    type: text
+  cuisine_type:
+    type: text
+  dietary_preference:
+    type: text
+  order_id:
+    type: text
+  items:
+    type: list
+  delivery_type:
+    type: text
+  address:
+    type: text
+  payment_method:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to Sakshi Cafe. How can I help you today?"
+    - text: "Hi there! What can I do for you?"
+    - text: "Namaste! Welcome to Sakshi Cafe. What would you like?"
+
+  utter_help_options:
+    - text: "I can help you with:\n• Making a reservation\n• Viewing our menu\n• Placing an order\n• Tracking your order\n• Providing feedback"
+
+  utter_ask_party_size:
+    - text: "How many people will be dining?"
+    - text: "What's the party size for your reservation?"
+
+  utter_ask_date:
+    - text: "What date would you like to reserve?"
+    - text: "Which date works for you?"
+
+  utter_ask_time:
+    - text: "What time would you prefer?"
+    - text: "What time should I book for?"
+
+  utter_ask_name:
+    - text: "May I have your name please?"
+    - text: "What's your name?"
+
+  utter_ask_phone:
+    - text: "What's your contact number?"
+    - text: "Can I get your phone number?"
+
+  utter_menu_options:
+    - text: "We have a variety of options including vegetarian, vegan, and gluten-free dishes. Do you have any dietary preferences?"
+    - text: "Our menu includes traditional and modern cuisine. What are you in the mood for?"
+
+  utter_ask_dietary_preference:
+    - text: "Do you have any dietary preferences or allergies?"
+    - text: "Are there any dietary restrictions I should know about?"
+
+  utter_dietary_options:
+    - text: "We offer:\n• Vegetarian dishes\n• Vegan options\n• Gluten-free meals\n• Dairy-free choices\n• Nut-free items"
+
+  utter_menu_items:
+    - text: "Here are some recommendations for you:"
+
+  utter_ask_items:
+    - text: "What would you like to order?"
+    - text: "What items can I get for you?"
+
+  utter_ask_more_items:
+    - text: "Would you like to add anything else?"
+    - text: "Anything else you'd like to order?"
+
+  utter_ask_delivery_type:
+    - text: "Would you like dine-in, takeaway, or delivery?"
+    - text: "How would you like to receive your order?"
+
+  utter_ask_address:
+    - text: "What's your delivery address?"
+    - text: "Where should we deliver your order?"
+
+  utter_payment_options:
+    - text: "We accept:\n• Credit/Debit Cards\n• UPI\n• Net Banking\n• Digital Wallets\n• Cash on Delivery"
+
+  utter_payment_methods:
+    - text: "Choose your preferred payment method from the options above."
+
+  utter_order_confirmation:
+    - text: "Your order has been confirmed! You'll receive updates on your order status."
+    - text: "Great! Your order is confirmed. Thank you for ordering from Sakshi Cafe!"
+
+  utter_ask_order_id:
+    - text: "What's your order ID?"
+    - text: "Can you provide your order number?"
+
+  utter_order_status:
+    - text: "Let me check your order status for you."
+
+  utter_thank_feedback:
+    - text: "Thank you for your positive feedback! We appreciate your support."
+    - text: "We're glad you enjoyed your experience!"
+
+  utter_sorry_feedback:
+    - text: "We're sorry to hear that. We'd like to improve your experience."
+
+  utter_ask_improvement:
+    - text: "How can we improve?"
+    - text: "What could we have done better?"
+
+  utter_contact_information:
+    - text: "You can reach us at:\n📞 Phone: +91-XXXX-XXXX\n📧 Email: hello@sakshicafe.com\n📍 Address: [Cafe Address]\n⏰ Hours: 10 AM - 10 PM"
+
+  utter_reservation_cancelled:
+    - text: "Your reservation has been cancelled. Feel free to book again anytime!"
+
+  utter_acknowledge:
+    - text: "Got it! Let me help you with that."
+
+actions:
+  - action_confirm_reservation
+  - action_get_menu_items
+  - action_add_to_cart
+  - action_process_order
+  - action_get_order_status
+  - action_save_feedback
+  - action_provide_contact_info

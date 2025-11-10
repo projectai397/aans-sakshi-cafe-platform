@@ -1,0 +1,96 @@
+{
+  "common": {
+    "appName": "Plataforma AANS",
+    "welcome": "Bienvenido a AANS",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "logout": "Cerrar sesión",
+    "settings": "Configuración",
+    "profile": "Perfil",
+    "help": "Ayuda",
+    "about": "Acerca de"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "ave": "AVE",
+    "sakshi": "Sakshi",
+    "subcircle": "SubCircle",
+    "blog": "Blog",
+    "admin": "Administrador",
+    "dashboard": "Panel de control",
+    "analytics": "Análisis",
+    "payments": "Pagos",
+    "achievements": "Logros"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "rememberMe": "Recuérdame",
+    "forgotPassword": "¿Olvidó su contraseña?",
+    "noAccount": "¿No tiene una cuenta?",
+    "hasAccount": "¿Ya tiene una cuenta?"
+  },
+  "dashboard": {
+    "overview": "Descripción general",
+    "myProfile": "Mi Perfil",
+    "myOrders": "Mis Pedidos",
+    "myMemberships": "Mis Membresías",
+    "activity": "Actividad",
+    "settings": "Configuración",
+    "totalSpent": "Total Gastado",
+    "activeMemberships": "Membresías Activas",
+    "achievements": "Logros",
+    "referralCode": "Código de Referencia"
+  },
+  "admin": {
+    "dashboard": "Panel de Administrador",
+    "users": "Usuarios",
+    "payments": "Pagos",
+    "analytics": "Análisis",
+    "reports": "Reportes",
+    "settings": "Configuración",
+    "totalUsers": "Usuarios Totales",
+    "totalRevenue": "Ingresos Totales",
+    "activeMembers": "Miembros Activos",
+    "conversionRate": "Tasa de Conversión"
+  },
+  "divisions": {
+    "ave": {
+      "name": "AVE",
+      "description": "Soluciones SaaS empresariales",
+      "tagline": "Empoderando negocios con tecnología avanzada"
+    },
+    "sakshi": {
+      "name": "Sakshi",
+      "description": "Bienestar y Conciencia",
+      "tagline": "Viaje hacia el bienestar integral"
+    },
+    "subcircle": {
+      "name": "SubCircle",
+      "description": "Cultura Subterránea",
+      "tagline": "Celebra la cultura y la creatividad auténtica"
+    }
+  },
+  "messages": {
+    "welcomeBack": "¡Bienvenido de vuelta!",
+    "noData": "No hay datos disponibles",
+    "loadingData": "Cargando datos...",
+    "errorLoading": "Error al cargar datos",
+    "tryAgain": "Intentar de nuevo",
+    "confirmDelete": "¿Está seguro de que desea eliminar esto?",
+    "deleteSuccess": "Eliminado exitosamente",
+    "saveSuccess": "Guardado exitosamente",
+    "updateSuccess": "Actualizado exitosamente"
+  }
+}

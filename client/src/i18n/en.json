@@ -1,0 +1,96 @@
+{
+  "common": {
+    "appName": "AANS Platform",
+    "welcome": "Welcome to AANS",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "logout": "Logout",
+    "settings": "Settings",
+    "profile": "Profile",
+    "help": "Help",
+    "about": "About"
+  },
+  "navigation": {
+    "home": "Home",
+    "ave": "AVE",
+    "sakshi": "Sakshi",
+    "subcircle": "SubCircle",
+    "blog": "Blog",
+    "admin": "Admin",
+    "dashboard": "Dashboard",
+    "analytics": "Analytics",
+    "payments": "Payments",
+    "achievements": "Achievements"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "overview": "Overview",
+    "myProfile": "My Profile",
+    "myOrders": "My Orders",
+    "myMemberships": "My Memberships",
+    "activity": "Activity",
+    "settings": "Settings",
+    "totalSpent": "Total Spent",
+    "activeMemberships": "Active Memberships",
+    "achievements": "Achievements",
+    "referralCode": "Referral Code"
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "users": "Users",
+    "payments": "Payments",
+    "analytics": "Analytics",
+    "reports": "Reports",
+    "settings": "Settings",
+    "totalUsers": "Total Users",
+    "totalRevenue": "Total Revenue",
+    "activeMembers": "Active Members",
+    "conversionRate": "Conversion Rate"
+  },
+  "divisions": {
+    "ave": {
+      "name": "AVE",
+      "description": "Enterprise SaaS Solutions",
+      "tagline": "Empowering businesses with advanced technology"
+    },
+    "sakshi": {
+      "name": "Sakshi",
+      "description": "Wellness & Consciousness",
+      "tagline": "Journey to holistic well-being"
+    },
+    "subcircle": {
+      "name": "SubCircle",
+      "description": "Underground Culture",
+      "tagline": "Celebrate authentic culture and creativity"
+    }
+  },
+  "messages": {
+    "welcomeBack": "Welcome back!",
+    "noData": "No data available",
+    "loadingData": "Loading data...",
+    "errorLoading": "Error loading data",
+    "tryAgain": "Try again",
+    "confirmDelete": "Are you sure you want to delete this?",
+    "deleteSuccess": "Successfully deleted",
+    "saveSuccess": "Successfully saved",
+    "updateSuccess": "Successfully updated"
+  }
+}

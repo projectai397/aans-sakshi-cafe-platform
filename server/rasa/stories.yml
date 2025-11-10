@@ -1,0 +1,155 @@
+version: "3.0"
+
+stories:
+# ==================== RESERVATION FLOW ====================
+- story: reservation flow with confirmation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: reservation
+  - action: utter_ask_party_size
+  - intent: inform
+    entities:
+    - party_size
+  - action: utter_ask_date
+  - intent: inform
+    entities:
+    - date
+  - action: utter_ask_time
+  - intent: inform
+    entities:
+    - time
+  - action: utter_ask_name
+  - intent: inform
+    entities:
+    - name
+  - action: action_confirm_reservation
+
+- story: reservation cancellation
+  steps:
+  - intent: reservation
+  - action: utter_ask_party_size
+  - intent: cancel
+  - action: utter_reservation_cancelled
+
+# ==================== MENU INQUIRY FLOW ====================
+- story: menu inquiry with dietary preference
+  steps:
+  - intent: menu_inquiry
+  - action: utter_menu_options
+  - intent: dietary_preference
+  - action: action_get_menu_items
+  - action: utter_menu_items
+
+- story: menu inquiry without preferences
+  steps:
+  - intent: menu_inquiry
+  - action: utter_ask_dietary_preference
+  - intent: affirm
+  - action: utter_dietary_options
+  - intent: inform
+    entities:
+    - dietary_preference
+  - action: action_get_menu_items
+
+# ==================== ORDER FLOW ====================
+- story: complete order flow
+  steps:
+  - intent: order
+  - action: utter_ask_items
+  - intent: inform
+    entities:
+    - item_name
+    - quantity
+  - action: action_add_to_cart
+  - action: utter_ask_more_items
+  - intent: deny
+  - action: utter_ask_delivery_type
+  - intent: inform
+  - action: utter_ask_address
+  - intent: inform
+  - action: utter_payment_options
+  - intent: inform
+  - action: action_process_order
+  - action: utter_order_confirmation
+
+- story: order with multiple items
+  steps:
+  - intent: order
+  - action: utter_ask_items
+  - intent: inform
+    entities:
+    - item_name
+    - quantity
+  - action: action_add_to_cart
+  - action: utter_ask_more_items
+  - intent: affirm
+  - action: utter_ask_items
+  - intent: inform
+    entities:
+    - item_name
+    - quantity
+  - action: action_add_to_cart
+  - action: utter_ask_more_items
+  - intent: deny
+  - action: action_process_order
+
+# ==================== ORDER TRACKING FLOW ====================
+- story: track order flow
+  steps:
+  - intent: track_order
+  - action: utter_ask_order_id
+  - intent: inform
+  - action: action_get_order_status
+  - action: utter_order_status
+
+# ==================== FEEDBACK FLOW ====================
+- story: positive feedback
+  steps:
+  - intent: feedback
+  - action: utter_thank_feedback
+  - action: action_save_feedback
+
+- story: negative feedback
+  steps:
+  - intent: feedback
+  - action: utter_sorry_feedback
+  - action: utter_ask_improvement
+  - intent: inform
+  - action: action_save_feedback
+
+# ==================== PAYMENT FLOW ====================
+- story: payment inquiry
+  steps:
+  - intent: payment
+  - action: utter_payment_options
+  - intent: affirm
+  - action: utter_payment_methods
+
+# ==================== CONTACT FLOW ====================
+- story: contact information
+  steps:
+  - intent: contact
+  - action: action_provide_contact_info
+  - action: utter_contact_information
+
+# ==================== DIETARY PREFERENCE FLOW ====================
+- story: dietary preference inquiry
+  steps:
+  - intent: dietary_preference
+  - action: utter_dietary_options
+  - action: action_get_menu_items
+
+# ==================== GREETING AND GOODBYE ====================
+- story: simple greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: greeting with help request
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_help_options
+  - intent: inform
+  - action: utter_acknowledge

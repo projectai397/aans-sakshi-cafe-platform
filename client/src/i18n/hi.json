@@ -1,0 +1,96 @@
+{
+  "common": {
+    "appName": "AANS प्लेटफॉर्म",
+    "welcome": "AANS में आपका स्वागत है",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफल",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "back": "वापस",
+    "next": "अगला",
+    "previous": "पिछला",
+    "logout": "लॉगआउट",
+    "settings": "सेटिंग्स",
+    "profile": "प्रोफाइल",
+    "help": "मदद",
+    "about": "परिचय"
+  },
+  "navigation": {
+    "home": "होम",
+    "ave": "AVE",
+    "sakshi": "साक्षी",
+    "subcircle": "सबसर्कल",
+    "blog": "ब्लॉग",
+    "admin": "प्रशासक",
+    "dashboard": "डैशबोर्ड",
+    "analytics": "विश्लेषण",
+    "payments": "भुगतान",
+    "achievements": "उपलब्धियां"
+  },
+  "auth": {
+    "login": "लॉगिन",
+    "signup": "साइन अप",
+    "logout": "लॉगआउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "rememberMe": "मुझे याद रखें",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "noAccount": "खाता नहीं है?",
+    "hasAccount": "पहले से खाता है?"
+  },
+  "dashboard": {
+    "overview": "अवलोकन",
+    "myProfile": "मेरी प्रोफाइल",
+    "myOrders": "मेरे ऑर्डर",
+    "myMemberships": "मेरी सदस्यताएं",
+    "activity": "गतिविधि",
+    "settings": "सेटिंग्स",
+    "totalSpent": "कुल खर्च",
+    "activeMemberships": "सक्रिय सदस्यताएं",
+    "achievements": "उपलब्धियां",
+    "referralCode": "रेफरल कोड"
+  },
+  "admin": {
+    "dashboard": "प्रशासक डैशबोर्ड",
+    "users": "उपयोगकर्ता",
+    "payments": "भुगतान",
+    "analytics": "विश्लेषण",
+    "reports": "रिपोर्ट",
+    "settings": "सेटिंग्स",
+    "totalUsers": "कुल उपयोगकर्ता",
+    "totalRevenue": "कुल राजस्व",
+    "activeMembers": "सक्रिय सदस्य",
+    "conversionRate": "रूपांतरण दर"
+  },
+  "divisions": {
+    "ave": {
+      "name": "AVE",
+      "description": "एंटरप्राइज SaaS समाधान",
+      "tagline": "उन्नत तकनीक के साथ व्यवसाय को सशक्त बनाना"
+    },
+    "sakshi": {
+      "name": "साक्षी",
+      "description": "कल्याण और चेतना",
+      "tagline": "समग्र कल्याण की यात्रा"
+    },
+    "subcircle": {
+      "name": "सबसर्कल",
+      "description": "भूमिगत संस्कृति",
+      "tagline": "प्रामाणिक संस्कृति और रचनात्मकता का जश्न"
+    }
+  },
+  "messages": {
+    "welcomeBack": "वापसी पर स्वागत है!",
+    "noData": "कोई डेटा उपलब्ध नहीं",
+    "loadingData": "डेटा लोड हो रहा है...",
+    "errorLoading": "डेटा लोड करने में त्रुटि",
+    "tryAgain": "फिर से प्रयास करें",
+    "confirmDelete": "क्या आप निश्चित हैं कि आप इसे हटाना चाहते हैं?",
+    "deleteSuccess": "सफलतापूर्वक हटाया गया",
+    "saveSuccess": "सफलतापूर्वक सहेजा गया",
+    "updateSuccess": "सफलतापूर्वक अपडेट किया गया"
+  }
+}

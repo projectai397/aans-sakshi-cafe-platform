@@ -1,0 +1,188 @@
+version: "3.0"
+
+nlu:
+# ==================== GREETINGS ====================
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - namaste
+    - welcome
+    - hey there
+    - howdy
+    - greetings
+
+# ==================== RESERVATIONS ====================
+- intent: reservation
+  examples: |
+    - I want to book a table
+    - Can I make a reservation
+    - Book a table for 4 people
+    - I need a reservation for tomorrow
+    - Reserve a table for 2
+    - Can you book me a table
+    - I'd like to reserve a table
+    - Book me a seat
+    - Make a reservation please
+    - Can I get a table
+
+# ==================== MENU INQUIRY ====================
+- intent: menu_inquiry
+  examples: |
+    - What do you have on the menu
+    - Show me vegan options
+    - Do you have gluten-free items
+    - What's your specialty
+    - What are your best dishes
+    - Show me vegetarian options
+    - What's available
+    - Menu please
+    - What can I eat
+    - Do you have dairy-free options
+
+# ==================== ORDERING ====================
+- intent: order
+  examples: |
+    - I want to order
+    - Can I place an order
+    - Order 2 coffees and 1 sandwich
+    - I'll have the green smoothie
+    - Give me a biryani
+    - I want to order food
+    - Can I order now
+    - I'd like to order
+    - Place an order for me
+    - I want to buy something
+
+# ==================== FEEDBACK ====================
+- intent: feedback
+  examples: |
+    - Your service was great
+    - The food was delicious
+    - I didn't like it
+    - The wait was too long
+    - Excellent experience
+    - Poor service
+    - Amazing food
+    - Not satisfied
+    - Great place
+    - Terrible experience
+
+# ==================== CANCELLATION ====================
+- intent: cancel
+  examples: |
+    - Cancel my order
+    - I want to cancel
+    - Remove my reservation
+    - Cancel everything
+    - Forget it
+    - Nevermind
+    - Don't proceed
+    - Cancel the booking
+    - I changed my mind
+
+# ==================== ORDER TRACKING ====================
+- intent: track_order
+  examples: |
+    - Where is my order
+    - Track my order
+    - When will it arrive
+    - Status of my order
+    - Is my order ready
+    - How long will it take
+    - When can I pick it up
+    - Order status please
+    - Can you check my order
+
+# ==================== PAYMENT ====================
+- intent: payment
+  examples: |
+    - How do I pay
+    - Payment options
+    - Can I pay online
+    - Do you accept cards
+    - What payment methods
+    - Can I pay with UPI
+    - Do you take digital payments
+    - Payment methods please
+
+# ==================== CONTACT ====================
+- intent: contact
+  examples: |
+    - What's your phone number
+    - How do I contact you
+    - Your address
+    - Business hours
+    - When are you open
+    - What's your location
+    - How can I reach you
+    - Contact information
+    - Your email please
+
+# ==================== DIETARY PREFERENCES ====================
+- intent: dietary_preference
+  examples: |
+    - I'm vegan
+    - I'm vegetarian
+    - I'm gluten-free
+    - I'm lactose intolerant
+    - I'm allergic to nuts
+    - I don't eat meat
+    - I'm on a diet
+    - I have food allergies
+    - I'm dairy-free
+
+# ==================== AFFIRMATION ====================
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - yep
+    - sure
+    - okay
+    - ok
+    - alright
+    - sounds good
+    - that works
+    - perfect
+
+# ==================== DENIAL ====================
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not really
+    - no thanks
+    - I don't think so
+    - that won't work
+    - not interested
+    - skip it
+    - pass
+
+# ==================== INFORMATION PROVISION ====================
+- intent: inform
+  examples: |
+    - I'm looking for [cuisine](cuisine_type)
+    - I want [vegan](dietary_preference) food
+    - For [4](party_size) people
+    - Tomorrow at [7 PM](time)
+    - My name is [John](name)
+    - My number is [9876543210](phone)
+    - I want [biryani](item_name)
+    - [2](quantity) coffees please
+    - On [Saturday](date)
+
+# ==================== ENTITIES ====================
+entities:
+- cuisine_type
+- dietary_preference
+- party_size
+- time
+- name
+- phone
+- item_name
+- quantity
+- date
