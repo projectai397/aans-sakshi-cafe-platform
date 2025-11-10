@@ -8,6 +8,12 @@ export const APP_LOGO = "/aans-logo.png";
 export const getLoginUrl = () => {
   const oauthPortalUrl = import.meta.env.VITE_OAUTH_PORTAL_URL;
   const appId = import.meta.env.VITE_APP_ID;
+  
+  // Return a default login URL if OAuth is not configured
+  if (!oauthPortalUrl || !appId) {
+    return '/login';
+  }
+  
   const redirectUri = `${window.location.origin}/api/oauth/callback`;
   const state = btoa(redirectUri);
 

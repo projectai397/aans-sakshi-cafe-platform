@@ -16,7 +16,13 @@ import AdvancedSearch from "@/pages/AdvancedSearch";
 import ReferralProgram from "@/pages/ReferralProgram";
 import SocialSharing from "@/pages/SocialSharing";
 import RecommendationEngine from "@/pages/RecommendationEngine";
-import Gamification from "@/pages/Gamification";
+import Gamification from "./pages/Gamification";
+import SakshiAnalyticsDashboard from "./pages/sakshi/analytics/Dashboard";
+import SakshiRevenueAnalytics from "./pages/sakshi/analytics/RevenueAnalytics";
+import SakshiCustomerAnalytics from "./pages/sakshi/analytics/CustomerAnalytics";
+import SakshiMenuPerformance from "./pages/sakshi/analytics/MenuPerformance";
+import AVEDashboard from "./pages/ave/AVEDashboard";
+import AVEAnalytics from "./pages/ave/AVEAnalytics";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -79,6 +85,12 @@ function Router() {
       <Route path="/social-sharing" component={SocialSharing} />
       <Route path="/recommendations" component={RecommendationEngine} />
       <Route path="/gamification" component={Gamification} />
+      <Route path="/sakshi/analytics/dashboard" component={SakshiAnalyticsDashboard} />
+      <Route path="/sakshi/analytics/revenue" component={SakshiRevenueAnalytics} />
+      <Route path="/sakshi/analytics/customers" component={SakshiCustomerAnalytics} />
+      <Route path="/sakshi/analytics/menu" component={SakshiMenuPerformance} />
+      <Route path="/ave/dashboard" component={AVEDashboard} />
+      <Route path="/ave/analytics" component={AVEAnalytics} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
